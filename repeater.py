@@ -119,7 +119,7 @@ def main():
 
     try:
         debug_print('Retrieving search object')
-        replies = api.search("#cgevent")
+        replies = api.search(settings.hashtag)
     except Exception, e:    # quit on error here
         print e
         exit(1)
